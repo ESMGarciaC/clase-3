@@ -28,21 +28,31 @@ public class Principal {
             
         //}
         int numeros[] = new int[10];
-        char letras[] = {'a','b','c'};
+//        char letras[] = {'a','b','c'};
         
         numeros[0] = 10;
-        numeros[5] = 14;     
+        numeros[5] = 14;
+        numeros[6] = 9;
+        numeros[7] = 3;
+        numeros[8] = 10;
         
         //System.out.println(numeros[5] / 7);
         
-        for (char letra : letras){
-            System.out.println(letra);
-        }
+//        for (char letra : letras){
+//            System.out.println(letra);
+//        }
              // System.out.println(letras.length); 
-            for (int numero : numeros){
-                System.out.println(numero);
-            }
-                
+//            int i = 0;
+//            for (int numero : numeros){
+//                if(numero % 2 == 0){
+//                    System.out.println(numero);
+//                System.out.println( "posicion: " + i);
+//                }
+//           
+//                i++;
+//            }
+            //System.out.println(numeros[8] / 2);
+            System.out.println( (float) numeros[6] / 2);  // me debe devolver con decimales
        
         
     }
