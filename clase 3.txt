@@ -33,12 +33,15 @@ public class Principal {
         numeros[0] = 10;
         numeros[5] = 14;     
         
-        System.out.println(numeros[5] / 7);
+        //System.out.println(numeros[5] / 7);
         
         for (char letra : letras){
             System.out.println(letra);
         }
              // System.out.println(letras.length); 
+            for (int numero : numeros){
+                System.out.println(numero);
+            }
                 
        
         
