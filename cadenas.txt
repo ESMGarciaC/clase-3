@@ -10,12 +10,27 @@ package clase.pkg3;
  */
 public class cadenas {
     public static void main(String[] args) {
-        String nombres = "Enrique Santa Maria";
-        String apellido = "Garcia";
+        String nombres = "Enrique Santa Maria,";
+        String apellido = "\"\tGarcia\""; // ponemos \ para agregarle comillas al apellido ya que no se puede comillas dobles y la \t es hacer espacio como si fuera una tab
         
         String resultado1 = nombres + " " +apellido;
         
-        System.out.println(resultado1);
+        System.out.println(resultado1); // muestra nombres y apellido
+        
+        String resultado2 = resultado1.toLowerCase();// todo en minuscula
+        System.out.println(resultado2);
+        
+        String resultado3 = resultado1.toUpperCase();// todo en mayuscula
+        System.out.println(resultado3);
+        
+        System.out.println(resultado3.charAt(6));// muestra la letra en orden numero 6
+        System.out.println(resultado3.equals(resultado2.toUpperCase()));// se fija si son iguales y ponemos en mayus el 2 para que sean iguales
+        System.out.println(resultado1.startsWith("En"));// vemos si inicia con "En"
+        
+        String Vectorcadenas[] = resultado3.split(",");// corta cuando ahi una ,
+        System.out.println(Vectorcadenas[0]);
+        System.out.println(Vectorcadenas[1].trim());// ponemos trim para sacar el espacio que nos da
+        
         
     }
     
